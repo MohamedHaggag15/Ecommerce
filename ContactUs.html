@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <title>Material Design for Bootstrap</title>
+        <!-- MDB icon -->
+        <link rel="icon" href="images/logo-no-background.png" type="image/x-icon" />
+        <!-- Font Awesome -->
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        />
+        <!-- Google Fonts Roboto -->
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+        />
+
+
+        <!-- MDB -->
+        <link rel="stylesheet" href="css/mdb.min.css" />
+        <!-- Bootstarp -->
+        <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        </script>
+        <script type="text/javascript">
+          (function(){
+              emailjs.init("wt2aaLamNFQZ6UkQd");
+          })();
+        </script>
+      </head>
+<body>
+  <div class="widdLoader">
+    <div class="loader"></div>
+  </div>
+  <div id="content" class="hide">
+       <!-- Navbar -->
+       <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img class="bbrand" src="images/logo-no-background.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link  active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="shop.html">Shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="About.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="Blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="ContactUs.html">Contact Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="signup.html">Sign Up</a>
+              </li>
+            </ul>
+  
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar -->
+      <span class="up"><i class="fa-solid fa-arrow-up"></i></span>
+              
+                <!-- Section 1 -->
+                <section class="sec1-contact">
+                  <div>
+                      <h1>#ReadMore</h1>
+                      <p>Read all case studies about our products!</p>
+                  </div>
+                </section>
+                <!-- Section 1 -->
+  
+                <!-- Section 2 -->
+                <section class="container sec2-contact">
+                  <div class="row">
+                      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                          <p>GET IN TOUCH</p>
+                          <h2>Visit one of our agency locations or contact us today</h2>
+                          <p>Head Office</p>
+                          <p><i class="fa-solid fa-map"></i> Cairo , Egypt</p>
+                          <p><i class="fa-solid fa-envelope"></i> mohamedhaggag407@gmail.com</p>
+                          <p><i class="fa-solid fa-phone"></i> +201015263973</p>
+                          <p><i class="fa-regular fa-clock"></i> Monday to Saturday, 8:00 AM to 6:00 PM</p>
+                      </div>
+                      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7292348.620737275!2d25.580320442177815!3d26.817135094384774!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2sEgypt!5e0!3m2!1sen!2seg!4v1700299298745!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      </div>
+                  </div>
+                </section>
+                <!-- Section 2 -->
+  
+                <!-- Section 3 -->
+                <section class="container sec3-contact">
+                  <div class="row">
+                      <div class="col-xxl-7 col-xl-7 col-lg-7 col-md-12 col-sm-12">
+                        <div class="conta">
+                          <form id="myForm">
+                            <h2>We hear from you anything you want to say</h2>
+                            <div>
+                              <label for="username">Username:</label>
+                              <input type="text" id="fullName" name="username" >
+                              <div id="usernameError" class="error"></div>
+                            </div>
+                            <div>
+                              <label for="email">Email:</label>
+                              <input type="email" id="email_id" name="email">
+                              <div id="emailError" class="error"></div>
+                            </div>
+  
+                            <div>
+                              <label for="message">Message:</label>
+                              <textarea id="message" name="message"></textarea>
+                              <div id="messageError" class="error"></div>
+                            </div>
+                            <button type="submit">Submit</button>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-sm-12">
+                          <div class="img-display">
+                              <div><img src="images/1 (1).png" alt=""></div>
+                              <div>
+                                  <h4>John Doe</h4>
+                                  <p>Senior Marketing Manager</p>
+                                  <p>Phone: + OOO 123 OOO 77 88</p>
+                                  <p>Email: contact@example.com</p>
+                              </div>
+                          </div>
+                          <div class="img-display">
+                              <div><img src="images/2.png" alt=""></div>
+                              <div>
+                                  <h4>Wiliam Smith</h4>
+                                  <p>Senior Marketing Manager</p>
+                                  <p>Phone: + OOO 123 OOO 77 88</p>
+                                  <p>Email: contact@example.com</p>
+                              </div>
+                          </div>
+                          <div class="img-display">
+                              <div><img src="images/3.png" alt=""></div>
+                              <div>
+                                  <h4>Anna Tomas</h4>
+                                  <p>Senior Marketing Manager</p>
+                                  <p>Phone: + OOO 123 OOO 77 88</p>
+                                  <p>Email: contact@example.com</p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                </section>
+                <!-- Section 3 -->
+  
+      <!-- Footer -->
+      <footer class="text-center text-lg-start bg-light text-muted">
+  
+        <!-- Section: Links  -->
+        <section class="ffoter">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+             <!-- Grid column -->
+             <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <img class="model-footer" src="images/logo-no-background.png" alt="">
+              <h6 class="text-uppercase fw-bold mb-4 ccoontact">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Cairo, Egypt</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                mohamedhaggag407@gmail.com
+              </p>
+              <p><i class="fas fa-phone me-3"></i> 201015263973</p>
+              <div>
+                <p>Follow Us:</p>
+                <div class="liinks">
+                  <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                  <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                  <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                  <a href="" class="me-4 text-reset">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  About
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">About Us</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Delivery Information</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Privacy Policy</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Terms & Conditions</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  My Account
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Sign In</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">View Cart</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">My Wishlist</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+                     <!-- Grid column -->
+                     <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-6 col-sm-12 mx-auto mb-md-0 mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase fw-bold mb-4">Install App</h6>
+                      <p>From App Store or Google Play</p>
+                      <div class="ggoole">
+                        <img src="images/app.jpg" alt="">
+                        <img src="images/play.jpg" alt="">
+                      </div>
+                      <p class="ppay">Secured Payment Gateways</p>
+                      <img class="ppp" src="images/pay.png" alt="">
+                    <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold" href="#">Mohamed Haggag</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+          <!-- Footer -->
+   
+  </div>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <!-- Bootstrap -->
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

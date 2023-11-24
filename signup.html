@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ccconntta">
+        <form action="index.html" class="mmmform" id="myForm" onsubmit="validateForm(event)">
+            <div><h2>Sign Up</h2></div>
+            <label for="usr">Username:</label>
+            <input type="text" id="usr" >
+            <span id="usrErr" class="error"></span>
+            <br><br>
+        
+            <label for="eml">Email:</label>
+            <input type="email" id="eml">
+            <span id="emlErr" class="error"></span>
+            <br><br>
+        
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd">
+            <span id="pwdErr" class="error"></span>
+            <br><br>
+        
+            <label for="cnfPwd">Confirm Password:</label>
+            <input type="password" id="cnfPwd">
+            <span id="cnfPwdErr" class="error"></span>
+            <br><br>
+        
+            <input type="submit" class="buutoun" value="Send">
+          </form>
+    </div>
+
+  <script>
+    function validateForm(event) {
+      event.preventDefault();
+
+      // Reset error messages
+      clearErrors();
+
+      // Get form values
+      var usr = document.getElementById('usr').value;
+      var eml = document.getElementById('eml').value;
+      var pwd = document.getElementById('pwd').value;
+      var cnfPwd = document.getElementById('cnfPwd').value;
+
+      // Validate username
+      if (usr === '') {
+        showError('usrErr', 'Please enter a username');
+      }
+
+      // Validate email
+      if (eml === '') {
+        showError('emlErr', 'Please enter an email');
+      } else if (!isValidEmail(eml)) {
+        showError('emlErr', 'Please enter a valid email');
+      }
+
+      // Validate password
+      if (pwd === '') {
+        showError('pwdErr', 'Please enter a password');
+      }
+
+      // Validate confirm password
+      if (cnfPwd === '') {
+        showError('cnfPwdErr', 'Please confirm the password');
+      } else if (pwd !== cnfPwd) {
+        showError('cnfPwdErr', 'Passwords do not match');
+      }
+
+      // Submit the form if there are no errors
+      if (!hasErrors()) {
+        document.getElementById('myForm').submit();
+      }
+    }
+
+    function showError(elId, errMsg) {
+      var errorEl = document.getElementById(elId);
+      errorEl.textContent = errMsg;
+    }
+
+    function clearErrors() {
+      var errorEls = document.getElementsByClassName('error');
+      for (var i = 0; i < errorEls.length; i++) {
+        errorEls[i].textContent = '';
+      }
+    }
+
+    function isValidEmail(email) {
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+
+    function hasErrors() {
+      var errorEls = document.getElementsByClassName('error');
+      for (var i = 0; i < errorEls.length; i++) {
+        if (errorEls[i].textContent !== '') {
+          return true;
+        }
+      }
+      return false;
+    }
+  </script>
+</body>
+</html>
